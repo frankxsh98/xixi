@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>嘿！My高</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="./style2.css">
+
+</head>
+<body onload="flyin()">
+    <div id="fly" class="flip-card" >
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <a href="javascript:delay('index.html')"><img src="xixi.png"></a>
+          </div>
+          <div class="flip-card-back">
+            <a href="javascript:delay('index.html')"><img src="withme.png" ></a>
+          </div>
+        </div>
+      </div>
+   
+    <!-- </div>
+</div>  -->
+<!-- partial -->
+  <script>
+    function flyin() {
+        var box = document.getElementById("fly");
+        var w=window.screen.width;
+        var h=window.screen.height;
+        var x=0.45*h-0.25*w;
+        console.log(String(x))
+        box.style.bottom=String(x)+"px";
+        box.style.opacity="1";
+    }
+    function delay (URL) {
+    setTimeout( function() { window.location = URL }, 600 );
+    var box = document.getElementById("fly");
+    box.style.bottom="-100%";
+    box.style.opacity="0";
+}
+    </script>
+</body>
+</html>
+

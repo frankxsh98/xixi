@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>嘿！My高</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body onload="flyin()">
+<!-- partial:index.partial.html -->
+<!-- <div class="container">
+  <div class="top flip-card" >
+        <a href="#card" class="lightbox trans flip-card-front" id="flip"><img src="xixi.png"></a>
+        <a href="#card" class="lightbox trans flip-card-back" id="flip2"><img src="withme.png"></a>
+    </div>
+</div>  -->
+<section class="above-fold">
+  <div class="wrap-present">
+    <div class="present-box" id="present">
+      <div class="present">
+        <div class="img-wrap" id="present-image">
+          <!-- <a href="#light" class="lightbox trans" id="img_1" tabindex="-1"><img src="xixi.png"
+            alt="sketch1"></a> -->
+            <a href="javascript:delay('detail.html')" id="card"><img src="withme.png"></a>  
+        </div>
+      </div>
+      <div class="side front"></div>
+      <div class="side back"></div>
+      <div class="side left"></div>
+      <div class="side right"></div>
+      <div class="side top">
+        <span class="to">
+          <span class="name" id="nametag">
+          </span>
+        </span>
+      </div>
+      <div class="side bottom"></div>
+    </div>
+  </div>
+  <p class="info-text"></p>
+</section>
+<!-- partial -->
+<script>
+  function flyin() {
+      var box = document.getElementById("present");
+      box.style.bottom="0";
+      // box.style.opacity="1";
+  }
+  function delay (URL) {
+  setTimeout( function() { window.location = URL }, 300 );
+  var box = document.getElementById("present");
+  box.style.opacity="0";
+  box.style.bottom="-500px";
+}
+  </script>
+  <script  src="./script.js"></script>
+
+</body>
+</html>
+
