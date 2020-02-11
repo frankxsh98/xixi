@@ -78,7 +78,7 @@ html, body {
           transform: translateZ(0px);
 }
 .present-box.open > .side {
-  opacity: 0;
+  opacity: 0.05;
   -webkit-transition: opacity 500ms 600ms;
   transition: opacity 500ms 600ms;
 }
@@ -138,8 +138,8 @@ html, body {
           z-index: 999;
 }
 .present-box .present > .img-wrap a:hover {
-  -webkit-transform: scale(2);
-          transform: scale(2);
+  -webkit-transform: scale(3);
+          transform: scale(3);
 }
 
 .present-box .present > .img-wrap img {
@@ -150,9 +150,12 @@ html, body {
 .present-box > .side {
   width: 200px;
   height: 200px;
+  /* border: 2px solid black; */
+  /* box-sizing: border-box; */
   position: absolute;
   display: block;
-  background: repeating-linear-gradient(45deg, #cc2000, #cc2000 20px, #ffffff 20px, #ffffff 40px);
+  /* background: repeating-linear-gradient(45deg, #cc2000, #cc2000 20px, #ffffff 20px, #ffffff 40px); */
+  background: repeating-linear-gradient(45deg, #b12a21, #b12a21 20px, white 20px, white 40px);
   top: 0;
   left: 0;
   -webkit-transition: -webkit-transform 400ms;
